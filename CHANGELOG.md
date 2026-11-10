@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3 (2026-11-10)
+
+- Moved the repository to github.com/BlockSurvey/bs-grid; the live demo is now at blocksurvey.github.io/bs-grid. No code changes.
+
 ## 0.1.2 (2026-11-10)
 
 - Renamed the package to `ngx-bs-grid` (was `@samjoe5994/bs-grid`). Install with `npm i ngx-bs-grid` and change imports from `@samjoe5994/bs-grid` to `ngx-bs-grid`. No code changes.

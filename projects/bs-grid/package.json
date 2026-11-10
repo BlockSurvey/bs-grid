@@ -1,6 +1,6 @@
 {
   "name": "ngx-bs-grid",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Fast, dependency-free Angular data grid: virtual scrolling, pinning, sorting, filtering, grouping, editing, range selection, clipboard, pagination, CSV/Excel export. MIT.",
   "keywords": [
     "angular",
@@ -39,13 +39,13 @@
     "name": "BlockSurvey",
     "url": "https://blocksurvey.io"
   },
-  "homepage": "https://samjoe5994.github.io/bs-grid/",
+  "homepage": "https://blocksurvey.github.io/bs-grid/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samjoe5994/bs-grid.git"
+    "url": "git+https://github.com/BlockSurvey/bs-grid.git"
   },
   "bugs": {
-    "url": "https://github.com/samjoe5994/bs-grid/issues"
+    "url": "https://github.com/BlockSurvey/bs-grid/issues"
   },
   "peerDependencies": {
     "@angular/common": "^20.0.0 || ^21.0.0 || ^22.0.0",

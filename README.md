@@ -1,10 +1,10 @@
 # bs-grid
 
 [![npm version](https://img.shields.io/npm/v/ngx-bs-grid.svg)](https://www.npmjs.com/package/ngx-bs-grid)
-[![CI](https://github.com/samjoe5994/bs-grid/actions/workflows/ci.yml/badge.svg)](https://github.com/samjoe5994/bs-grid/actions/workflows/ci.yml)
+[![CI](https://github.com/BlockSurvey/bs-grid/actions/workflows/ci.yml/badge.svg)](https://github.com/BlockSurvey/bs-grid/actions/workflows/ci.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**[Live demo](https://samjoe5994.github.io/bs-grid/)**
+**[Live demo](https://blocksurvey.github.io/bs-grid/)**
 
 Monorepo for **[ngx-bs-grid](https://www.npmjs.com/package/ngx-bs-grid)** — a zero-dependency Angular data grid, MIT licensed.
 
@@ -39,7 +39,7 @@ npm run publish:lib    # build + npm publish from dist/bs-grid
 
 Publishing runs from `dist/bs-grid`, never from the repo root. Bump `version` in `projects/bs-grid/package.json`, tag the commit, and push — the GitHub Actions workflow publishes on release using npm **trusted publishing (OIDC)**, so no npm token is stored in the repo.
 
-First release only: publish manually once to claim the name, then configure the trusted publisher on npmjs.com (owner `samjoe5994`, repo `bs-grid`, workflow filename `publish.yml`).
+First release only: publish manually once to claim the name, then configure the trusted publisher on npmjs.com (owner `BlockSurvey`, repo `bs-grid`, workflow filename `publish.yml`).
 
 The demo deploys to GitHub Pages on every push to `main` (`.github/workflows/pages.yml`).
 
