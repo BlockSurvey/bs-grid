@@ -586,6 +586,10 @@ export class BsGridComponent implements OnInit, OnChanges, AfterViewInit, OnDest
   onPageSizeSelect(ev: Event): void {
     this.setPaginationPageSize(Number((ev.target as HTMLSelectElement).value));
   }
+  /** Menu icon: 'svg:<name>' draws a bundled line icon (see .bs-grid-menu-icon--<name>), anything else is text. */
+  menuIconText(icon?: string): string { return icon && !icon.startsWith('svg:') ? icon : ''; }
+  menuIconClass(icon?: string): string { return icon?.startsWith('svg:') ? `bs-grid-menu-icon--svg bs-grid-menu-icon--${icon.slice(4)}` : ''; }
+
   get totalWidth(): number { return this.cols.leftWidth + this.cols.centerWidth + this.cols.rightWidth; }
   get leftColumns(): Column[] { return this.cols.leftColumns; }
   get centerColumns(): Column[] { return this.cols.centerColumns; }
@@ -1327,10 +1331,10 @@ export class BsGridComponent implements OnInit, OnChanges, AfterViewInit, OnDest
     if (typeof it === 'string') {
       switch (it) {
         case 'separator': return { separator: true } as MenuItem;
-        case 'csvExport': return { label: 'CSV Export', icon: '⭳', action: () => this.api.exportDataAsCsv() };
-        case 'excelExport': return { label: 'Excel Export', icon: '⭳', action: () => this.api.exportDataAsExcel() };
-        case 'copy': return { label: 'Copy', icon: '⧉', action: () => this.copySelectionToClipboard(false) };
-        case 'copyWithHeaders': return { label: 'Copy with Headers', icon: '⧉', action: () => this.copySelectionToClipboard(true) };
+        case 'csvExport': return { label: 'CSV Export', icon: 'svg:csv', action: () => this.api.exportDataAsCsv() };
+        case 'excelExport': return { label: 'Excel Export', icon: 'svg:excel', action: () => this.api.exportDataAsExcel() };
+        case 'copy': return { label: 'Copy', icon: 'svg:copy', action: () => this.copySelectionToClipboard(false) };
+        case 'copyWithHeaders': return { label: 'Copy with Headers', icon: 'svg:copy', action: () => this.copySelectionToClipboard(true) };
         // Unsupported AG built-ins (e.g. 'chartRange', 'paste', 'export') are dropped rather
         // than shown disabled — the host reuses its AG menu config verbatim.
         default: return null;

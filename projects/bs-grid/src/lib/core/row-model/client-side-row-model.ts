@@ -319,6 +319,8 @@ export class ClientSideRowModel implements IRowModel {
         const id = this.resolveId(data, this.allNodes.length);
         const node = new RowNode(id, data);
         node.attachState(this.nodeState);
+        // Same as setRowData, so rows added later (e.g. streamed pages) can be selected too
+        node.selectable = this.options.isRowSelectable ? this.options.isRowSelectable(node) : true;
         if (this.options.valueCache) node.valueCache = new Map();
         this.allNodes.push(node);
         this.byId.set(id, node);

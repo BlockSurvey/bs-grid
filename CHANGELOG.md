@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.4 (2026-11-12)
+
+- Homepage and "Live demo" links now point to https://blocksurvey.io/free-tools/bs-grid.
+- Fix: rows added through `applyTransaction({ add })` now get `selectable` from `isRowSelectable`, the same as rows from `rowData`.
+- Fix: the context menu's Copy, Copy with Headers, CSV Export and Excel Export items use line icons (AG Grid Quartz set) instead of text glyphs, which some fonts drew as a striped box.
+
 ## 0.1.3 (2026-11-10)
 
 - Moved the repository to github.com/BlockSurvey/bs-grid; the live demo is now at blocksurvey.github.io/bs-grid. No code changes.

@@ -387,17 +387,17 @@
       <div class="bs-grid-menu-sep" *ngIf="item.separator"></div>
       <div class="bs-grid-menu-item" *ngIf="!item.separator && !item.submenu"
         [class.bs-grid-menu-item--disabled]="item.disabled" (click)="runCtxItem(item)">
-        <span class="bs-grid-menu-icon">{{ item.icon || '' }}</span>
+        <span class="bs-grid-menu-icon" [ngClass]="menuIconClass(item.icon)">{{ menuIconText(item.icon) }}</span>
         <span class="bs-grid-menu-label" [title]="item.label">{{ item.label }}</span>
       </div>
       <div class="bs-grid-menu-item bs-grid-menu-item--parent" *ngIf="!item.separator && item.submenu">
-        <span class="bs-grid-menu-icon">{{ item.icon || '' }}</span>
+        <span class="bs-grid-menu-icon" [ngClass]="menuIconClass(item.icon)">{{ menuIconText(item.icon) }}</span>
         <span class="bs-grid-menu-label" [title]="item.label">{{ item.label }}</span>
         <span class="bs-grid-menu-arrow">›</span>
         <div class="bs-grid-submenu">
           <div class="bs-grid-menu-item" *ngFor="let sub of item.submenu"
             [class.bs-grid-menu-item--disabled]="sub.disabled" (click)="runCtxItem(sub)">
-            <span class="bs-grid-menu-icon">{{ sub.icon || '' }}</span>
+            <span class="bs-grid-menu-icon" [ngClass]="menuIconClass(sub.icon)">{{ menuIconText(sub.icon) }}</span>
             <span class="bs-grid-menu-label" [title]="sub.label">{{ sub.label }}</span>
           </div>
         </div>

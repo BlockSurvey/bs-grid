@@ -5,7 +5,7 @@
 [![CI](https://github.com/BlockSurvey/bs-grid/actions/workflows/ci.yml/badge.svg)](https://github.com/BlockSurvey/bs-grid/actions/workflows/ci.yml)
 [![license: MIT](https://img.shields.io/npm/l/ngx-bs-grid.svg)](https://github.com/BlockSurvey/bs-grid/blob/main/LICENSE)
 
-**[Live demo](https://blocksurvey.github.io/bs-grid/)** · **[GitHub](https://github.com/BlockSurvey/bs-grid)** · **[Changelog](https://github.com/BlockSurvey/bs-grid/blob/main/CHANGELOG.md)** · **[Report an issue](https://github.com/BlockSurvey/bs-grid/issues)**
+**[Live demo](https://blocksurvey.io/free-tools/bs-grid)** · **[GitHub](https://github.com/BlockSurvey/bs-grid)** · **[Changelog](https://github.com/BlockSurvey/bs-grid/blob/main/CHANGELOG.md)** · **[Report an issue](https://github.com/BlockSurvey/bs-grid/issues)**
 
 A lightweight Angular data grid with **zero runtime dependencies**. It needs nothing beyond Angular and RxJS.
 

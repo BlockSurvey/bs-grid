@@ -4,7 +4,7 @@
 [![CI](https://github.com/BlockSurvey/bs-grid/actions/workflows/ci.yml/badge.svg)](https://github.com/BlockSurvey/bs-grid/actions/workflows/ci.yml)
 [![license: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-**[Live demo](https://blocksurvey.github.io/bs-grid/)**
+**[Live demo](https://blocksurvey.io/free-tools/bs-grid)** · [Demo app on GitHub Pages](https://blocksurvey.github.io/bs-grid/)
 
 Monorepo for **[ngx-bs-grid](https://www.npmjs.com/package/ngx-bs-grid)** — a zero-dependency Angular data grid, MIT licensed.
 
